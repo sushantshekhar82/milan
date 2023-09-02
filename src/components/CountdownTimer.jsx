@@ -5,7 +5,7 @@ const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
-    const targetDate = new Date('2023-09-20T23:59:59');
+    const targetDate = new Date('2023-09-21T23:59:59');
     const now = new Date();
     const difference = targetDate - now;
 
@@ -45,19 +45,19 @@ const CountdownTimer = () => {
     <div className="countdown-container">
       <div className="countdown-item DigitalNumbers" id="days">
         {timeLeft.days}
-        <span style={{fontFamily:'calibri'}}>Days</span>
+        <span id='font'>Days</span>
       </div>
       <div className="countdown-item DigitalNumbers" id="hours">
         {timeLeft.hours}
-        <span style={{fontFamily:'calibri'}}>Hours</span>
+        <span id='font'>Hours</span>
       </div>
       <div className="countdown-item DigitalNumbers" id="minutes">
         {timeLeft.minutes}
-        <span style={{fontFamily:'calibri'}}>Minutes</span>
+        <span id='font'>Minutes</span>
       </div>
       <div className="countdown-item DigitalNumbers" id="seconds">
         {timeLeft.seconds}
-        <span style={{fontFamily:'calibri'}}>Seconds</span>
+        <span id='font'>Seconds</span>
       </div>
     </div>
   );

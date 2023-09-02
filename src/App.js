@@ -13,7 +13,7 @@ function App() {
 
       </Grid>
       
-      <Image  src="./lauchsoonbanner.png"  alt="launch soon banner" width={'500px'} position={'absolute'} top={'160px'} left={'140px'}/>
+      <Image  src="./lauchsoonbanner.png"  alt="launch soon banner" width={'500px'} position={'absolute'} top={'180px'} left={'140px'}/>
       <Box position={'absolute'} top={'330px'} left={'160px'}>
       <CountdownTimer/>
       </Box>
@@ -25,17 +25,18 @@ function App() {
   
       <Box display={{base:'block',md:'none',lg:'none'}} >
       <Image src="./coverimage.webp" alt="milancoverimage"/>
-      <Image src="./milanlogo.png" alt="milanlogo" marginTop={'25px'}/>
+      <Image src="./milanlogo.png" alt="milanlogo" marginTop={'20px'}/>
+      <Text textAlign={'center'} fontSize={'17px'} fontFamily={'calibri'} marginTop={'5px'}paddingTop={'8px'} marginBottom={'-20px'} color={'white'}>Lauching Soon</Text>
         <CountdownTimer/>
       </Box>
-    <Box marginTop={{base:'25px',lg:'70px'}} paddingBottom={'50px'} id='notifyme'>
-    <Text as={'h1'} color={'white'} fontSize={{base:'18px',lg:'30px'}} fontFamily={'calibri'} marginBottom={{base:'10px',lg:'10px'}} textAlign={'center'}>We’ll let you know when we are Launching</Text>
-    <form action="mailto:info@nodust.in" method="post" enctype="text/plain" autoComplete='off'>
-      <InputGroup width={{base:'80%',md:'70%',lg:'600px'}} margin={'auto'}>
+    <Box marginTop={{base:'5px',lg:'70px'}} paddingBottom={'70px'} id='notifyme'>
+    <Text as={'h1'} color={'white'} fontSize={{base:'17px',lg:'30px'}} fontFamily={'calibri'} marginBottom={{base:'10px',lg:'10px'}} textAlign={'center'}>We’ll let you know when we are Launching</Text>
+    <form action="mailto:rahulsundesha2@gmail.com" method="post" enctype="text/plain" autoComplete='off'>
+      <InputGroup width={{base:'85%',md:'80%',lg:'600px'}} margin={'auto'}>
        
       <Input
         type="email"
-        name="email"
+        name="Subscriber Email"
         backgroundColor={'white'}
         placeholder="Enter your Email..."
         fontWeight={'bold'}
